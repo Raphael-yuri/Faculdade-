@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+    int n1;
+    int n2;
+    int n3;
+    int a;
+    int resultadoDobro;
+    int resultadoMedia;
+    int resultadoFatorial;
+    int x;
+    int y;
+    
+    // Dobro
+
+    System.out.println("Digite um numero: ");
+    a = sc.nextInt();
+    resultadoDobro = dobro(a);
+    System.out.println("Resultado: " + resultadoDobro);
+    System.out.println("");
+
+    // Media
+
+    System.out.println("Digite o numero para calcular a media: ");
+    n1 = sc.nextInt();
+    System.out.println("Digite o segundo numero para calcular a media: ");
+    n2 = sc.nextInt();
+    System.out.println("Digite o terceiro numero para calcular a media: ");
+    n3 = sc.nextInt();
+    resultadoMedia = media(n1, n2, n3);
+    System.out.println("Resultado: " + resultadoMedia);
+
+    //Fatorial
+
+    System.out.println("Insira um valor:");
+    x = sc.nextInt();
+    resultadoFatorial = fatorial(x);
+    System.out.println("O valor da fatoração é: " + resultadoFatorial);
+  }
+
+  public static int dobro(int a) {
+
+    int dobro = 2 * a;
+    return dobro;
+  }
+
+  public static int media(int n1, int n2, int n3) {
+
+    int media = (n1 + n2 + n3) / 3;
+    return media;
+  }
+
+  public static int fatorial(int x){
+
+    String for (int i = 1; i <= x; i ++){
+     int y = y * i;}; 
+    
+  	return fatorial;   
+}
+}
