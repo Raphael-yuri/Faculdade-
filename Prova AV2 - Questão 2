@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+
+    int jogosVencidos;
+    Scanner input = new Scanner(System.in);
+    String  Oponentes[] = {"Dhalsim","Zaguief", "Guile","Ryu","Dhalsim","Chunli","Blanka" };
+
+for (int x = 0; x < Oponentes.length; x++)
+
+  System.out.println(Oponentes[x]);
+
+    System.out.println("\n Qual foi a quantidade das suas vitórias: ");
+    
+    jogosVencidos = input.nextInt();
+
+  if(jogosVencidos < 6){
+     System.out.println("\n Por favor, insira uma nova ficha para jogar novamente!");
+  }
+        else System.out.println("Hora do Boss!");
+  }
+}
