@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+       Scanner leia = new Scanner(System.in);
+      
+       int y, z;
+
+       double mediaAritimetica;
+       double calculoSoma = 0;
+      
+      System.out.println("Informe a quantidade da matriz");
+        int r = leia.nextInt();
+
+           int n[][] = new int[r][r];
+      
+        for(y=0; y < r; y++){
+            for(z=0; z < r; z++){
+              
+             System.out.println("Insira um numero: ");
+              
+               n[y][z] = leia.nextInt();
+              
+                calculoSoma = calculoSoma + y + z;
+        }
+    }
+ 
+        mediaAritimetica = calculoSoma/r; 
+            System.out.println("O resultado da média é: " + mediaAritimetica);
+}
+}
